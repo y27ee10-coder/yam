@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>yam</title>
   <link rel="stylesheet" href="style.css" />
-   <link rel="icon" type="image/png" href="preview.gif">
+  <link rel="icon" type="image/png" href="preview.gif">
 </head>
 <body>
 
@@ -13,26 +13,37 @@
 
   <!-- المحتوى -->
   <div class="container">
-    <img src="preview.gif" class="avatar" />
+   <img src="preview.gif" class="avatar" />
     <h1>yam</h1>
     <p>I am yam</p>
     <span class="location">📍 Saudi Arabia</span>
 
     <!-- أيقونات -->
     <div class="icons">
-      <a href="https://discord.gg/SMrkUFKf"><img src="DIS.png">Discord</a>
-      <a href="https://kick.com/yam798"><img src="kikc.png">Kick</a>
+      <a href="https://discord.gg/pMbJnb5d"><img src="DIS.png">Discord</a>
+      <a href="https://kick.com/w4sc"><img src="Kikc.png">Kick</a>
       <a href="https://www.tiktok.com/@y27ee"><img src="tik.png">Tiktok</a>
     </div>
 
     <!-- الموسيقى -->
-    <audio autoplay loop>
-      <source src="music.mp3" type="audio/mpeg">
-    </audio>
+ <div class="music-player">
+  <div class="music-glow"></div>
+  <div class="wave"></div>
+
+  <button id="toggleBtn" class="play-btn">
+    <span id="icon">▶</span>
+  </button>
+
+  <div class="volume-container">
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+  </div>
+</div>
+
+<audio id="audio" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
